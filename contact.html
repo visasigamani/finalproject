@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Myportfolio-Visaka</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  box-sizing: border-box;
+}
+
+/* Style of navigation bar */
+
+.navbar {
+overflow: hidden;
+background-color:black;
+}
+
+/* Navigation bar links style */
+
+.navbar a{
+float: left;
+display: block;
+color: rgb(241, 222, 159);
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+
+/* Right-aligned link */
+
+.navbar a.right {
+float: right;
+}
+
+/* Hover Style */
+
+.navbar a:hover {
+background-color: rgb(241, 222, 159);
+color:rgb(12, 12, 11);
+}
+
+/* Header styling */
+
+.header {
+padding: 80px;
+text-align: center;
+background-color: black;
+position: relative;
+color: rgb(192, 159, 75);
+}
+
+/* Header Size */
+
+.header h1 {
+  font-size: 40px;
+}
+
+/*Body Style*/
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 50px;
+background-color: black;
+color: rgb(192, 159, 75);
+}
+
+/*line spacing for the text*/
+
+div.texta{
+line-height: 200%;
+}
+
+/*Image and Text Side-by-side Flexbox*/
+
+.container {
+border: 3px solid black;
+padding: 10px;
+height: 600px;
+max-width: 1000px;
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+
+.container_image {
+margin: 10px;
+height: 400px;
+-o-object-fit: contain;
+object-fit:contain;
+align-self: flex-start;
+flex:1;
+}
+.contact {
+flex: 1;
+align-self: flex-start;
+border-radius: 5px;
+background-color: black;
+padding: 20px;
+}
+
+
+
+/*CONTACT FORM*/
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(192, 159, 75);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:  rgb(250, 184, 61);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: black;
+color: rgb(241, 222, 159);
+}
+
+/* Resume Download */
+#resume{
+padding-top: 20px;
+}
+
+#resume:hover .download {
+  visibility: visible;
+  color:rgb(192, 159, 75);
+}
+
+#resume .download {
+  visibility: hidden;
+  width: 120px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Responsive Layout 1024px */
+
+@media screen and (max-width: 1024px) {
+.row{   
+flex-direction: column;
+     }
+}
+
+
+/* Responsive Layout 400px */
+
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+      }
+}
+
+    </style>
+</head>
+
+<body>
+<!--Navigation Bar-->
+
+<div class="navbar">
+  <a href="HomePortfolio.html" target="parent">Home</a>
+  <a href="about.html"target="parent">About</a>
+  <a href="Myvlog.html"target="parent">MyVlog</a>
+  <a href="contact.html" class="right" target="parent">Contact</a>
+</div>
+
+<!--Header section-->
+
+<div class="header">
+  <h1>Let's Talk </h1>
+  <h2 style="font-style: italic; font-family: lucida calligraphy;" > Contact me through the below form or download resume</h2>
+</div>
+
+<!--Image and Text in a Container-->
+
+<div class="container">
+  <img class="container_image" src="visha2trans.png">
+<!--Contact Form-->
+  <div class="contact">
+  <form action="/action_page.php">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name..">
+  <label for="email">Email Address</label>
+  <input type="text" id="email" name="email" placeholder="Enter your email address..">
+  <label for="msg">Message</label>
+  <textarea id="msg" name="msg" placeholder="Enter your message.." style="height:200px"></textarea>
+  <input type="submit" value="Submit">
+  <div id="resume">
+    <a href="Lebenslauf_VisakaLakshmi Ramiah Veerasigamani_Tester_Consultant.pdf" 
+    download="Lebenslauf_Visaka">
+    <img src="Resume.png" alt="Resume" width="85px" height="40px">
+    <span class="download">Download Resume</span>
+    </a>
+    </div>
+  </form>
+  
+  </div>
+</div>
+
+
+</body>
+</html>

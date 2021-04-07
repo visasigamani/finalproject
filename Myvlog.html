@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Myflog-Visaka</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  box-sizing: border-box;
+}
+
+/* Style of navigation bar */
+
+.navbar {
+overflow: hidden;
+background-color:black;
+}
+
+/* Navigation bar links style */
+
+.navbar a{
+float: left;
+display: block;
+color: rgb(241, 222, 159);
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+
+/* Right-aligned link */
+
+.navbar a.right {
+float: right;
+}
+
+/* Hover Style */
+
+.navbar a:hover {
+background-color: rgb(241, 222, 159);
+color:rgb(12, 12, 11);
+}
+
+
+/* Header styling */
+
+.header {
+padding: 80px;
+text-align: center;
+background-color: black;
+position: relative;
+color: rgb(192, 159, 75);
+}
+
+/* Header Size */
+
+.header h1 {
+  font-size: 40px;
+}
+
+/*Body Style*/
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 50px;
+background-color: black;
+color: rgb(192, 159, 75);
+}
+/*line spacing for the text*/
+
+div.texta{
+line-height: 200%;
+}
+
+/*Image and Text Side-by-side Flexbox*/
+
+.container1 {
+border: 3px solid black;
+padding: 10px;
+height: 500px;
+max-width: 1000px;
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+
+.container_video {
+margin: 10px;
+-o-object-fit: contain;
+object-fit: contain;
+align-self: flex-start;
+flex:1;
+}
+.container_text {
+flex: 1;
+align-self: flex-start;
+}
+
+
+/*Lets Talk link color*/
+
+.talk a:link{ 
+color:gray;
+text-decoration: none;
+}
+
+.talk a:visited {
+  color: rgb(192, 159, 75);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.talk a:hover {
+  text-decoration: underline;
+  background-color: rgb(241, 222, 159);
+  color:rgb(12, 12, 11);
+}
+
+/* Footer */
+.footer {
+padding: 20px;
+}
+
+/*footer image display*/
+
+.column {
+  float: left;
+  width: 50px;
+  padding-left: 80px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Responsive Layout 1024px */
+
+@media screen and (max-width: 1024px) {
+.row {   
+flex-direction: column;
+     }
+}
+
+
+/* Responsive Layout 400px */
+
+@media screen and (max-width: 400px) {
+.navbar a, .column{
+float: none;
+width: 100%;
+      }
+}
+
+    </style>
+</head>
+
+<body>
+<!--Navigation Bar-->
+
+<div class="navbar">
+  <a href="HomePortfolio.html" target="parent">Home</a>
+  <a href="about.html"target="parent">About</a>
+  <a href="Myvlog.html"target="parent">MyVlog</a>
+  <a href="contact.html" class="right" target="parent">Contact</a>
+</div>
+
+<!--Header section-->
+
+<div class="header">
+  <h1 class="mouse">Vlogger </h1>
+  <h2 style="font-style: italic; font-family: lucida calligraphy;" >
+     my video presentation skill</h2>
+</div>
+
+<!--Image and Text in a Container-->
+
+<div class="container1">
+  <div class="container_video">
+  <iframe width="550" height="316" src="https://www.youtube.com/embed/crNDs5dtvJY" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen></iframe>
+  </div>
+  <div class="container_text">
+  <div class="texta">
+  <h1> My Vlog </h1>
+  <h4>
+   I can create Voice-Demo Presentations for your products.
+   My flog currently has variety of videos as I just started to learn video editing,
+   do voice-videos and to try few sofwares realted to that. After a while I thought 
+   "Why not i Monitize it!!". So now I have started heading to monitize it.
+  </h4>
+  </div>
+  <div class="talk">
+  <a href="contact.html">Let's Talk > </a>
+  </div>     
+  </div>
+</div>
+  <!--Footer-->
+  <div class="footer">
+
+<!-- Footer Image1-->
+  <div class="row">
+  <div class= "column">
+  <a href="https://www.facebook.com/VisakaLakshmi/" target="_blank">
+  <img src="fb_icon.png" alt="MyFacebook"style="width:50px;height:50px;">
+  </a> 
+  </div>
+
+  <!-- Footer Image2-->
+  
+  <div class="column">
+  <a href="https://www.youtube.com/channel/UCf_eaPjmegIvj7oIvOyD9aA" target="_blank">
+  <img src= "youtube_icon.png" alt="MyYoutube"style="width:52px;height:52px;">
+  </a> 
+  </div>
+  </div>
+
+  </div> <!-- Footer End-->
+
+</body>
+</html>

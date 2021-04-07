@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Myportfolio-Visaka</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  box-sizing: border-box;
+}
+
+/* Style of navigation bar */
+
+.navbar {
+overflow: hidden;
+background-color:black;
+}
+
+/* Navigation bar links style */
+
+.navbar a{
+float: left;
+display: block;
+color: rgb(241, 222, 159);
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+
+/* Right-aligned link */
+
+.navbar a.right {
+float: right;
+}
+
+/* Hover Style */
+
+.navbar a:hover {
+background-color: rgb(241, 222, 159);
+color:black;
+}
+
+/* Header styling */
+
+.header {
+padding: 80px;
+text-align: center;
+background-color: black;
+position: relative;
+color: rgb(192, 159, 75);
+}
+
+/* Header Size */
+
+.header h1 {
+  font-size: 40px;
+}
+
+/*Body Style*/
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 50px;
+background-color: black;
+color: rgb(192, 159, 75);
+}
+
+/*line spacing for the text*/
+
+div.texta{
+line-height: 200%;
+}
+
+/*List usage*/
+
+ul#list li{
+  display: inline;
+  text-decoration: none;
+  text-align: left;
+  font-size: 30px;
+}
+
+/*Image and Text Side-by-side Flexbox*/
+
+.container {
+border: 3px solid black;
+padding: 10px;
+height: 600px;
+max-width: 1000px;
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+
+.container_image {
+margin: 10px;
+height: 400px;
+-o-object-fit: contain;
+object-fit:contain;
+align-self: flex-start;
+flex:1;
+}
+.container_text {
+flex: 1;
+align-self: flex-start;
+}
+
+/*know link color on homepage*/
+
+.know a:link{ 
+color:gray;
+text-decoration: none;
+}
+
+.know a:visited {
+  color: rgb(192, 159, 75);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.know a:hover {
+  text-decoration: underline;
+  background-color: rgb(241, 222, 159);
+  color:rgb(12, 12, 11);
+}
+
+/* Footer */
+.footer {
+padding: 50px;
+}
+
+/*footer image display*/
+
+.column {
+  float: left;
+  width: 50px;
+  padding-top: none;
+  padding-left: 80px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive Layout 1024px */
+
+@media screen and (max-width: 1024px) {
+.row {   
+flex-direction: column;
+     }
+}
+
+
+/* Responsive Layout 400px */
+
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
+      }
+}
+
+    </style>
+</head>
+
+
+<body>
+  <!--Navigation Bar-->
+
+<div class="navbar">
+  <a href="HomePortfolio.html" target="parent">Home</a>
+  <a href="about.html"target="parent">About</a>
+  <a href="Myvlog.html"target="parent">MyVlog</a>
+  <a href="contact.html" class="right" target="parent">Contact</a>
+</div>
+
+<!--Header section-->
+
+<div class="header">
+  <h1>Even a Smart Idea needs a Great Presentation </h1>
+  <h2 style="font-style: italic; font-family: lucida calligraphy;" > I present it for you</h2>
+</div>
+
+<!--Image and Text in a Container-->
+<div class="container">
+  <img class="container_image" src="visha2trans.png">
+  <div class="container_text">
+  <div class="texta">
+  <h1>Analyst.Tester.Vlogger.Mom</h1>
+  <h4>
+   A business analayst who can presents your business plans to the valuable customers 
+   and maintain a good customer relationship. 
+   <br>
+   At the same time Test your products to ensure Quality. 
+   <br>
+   Love travelling and cooking.
+  </h4>
+  </div> 
+  <div class="know">
+  <a href="about.html">Know More > </a>
+  </div>
+  </div>
+</div>
+  <!--Footer-->
+  <div class="footer">
+
+<!-- Footer Image1-->
+  <div class="row">
+  <div class= "column">
+  <a href="https://www.facebook.com/VisakaLakshmi" target="_blank">
+  <img src="fb_icon.png" alt="MyFacebook"style="width:50px;height:50px;">
+  </a> 
+  </div>
+
+  <!-- Footer Image2-->
+  
+  <div class="column">
+  <a href="https://www.youtube.com/channel/UCf_eaPjmegIvj7oIvOyD9aA" target="_blank">
+  <img src= "youtube_icon.png" alt="MyYoutube"style="width:52px;height:52px;">
+  </a> 
+  </div>
+  </div>
+
+  </div> <!-- Footer End-->
+
+</body>
+</html>
